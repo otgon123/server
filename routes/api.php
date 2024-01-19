@@ -5,7 +5,6 @@ use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\RegistUserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use PHPUnit\Framework\Attributes\Group;
 
 //ルーティングのURL：「/api/xxxx」
 // TweetController
