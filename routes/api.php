@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\Api\TweetController;
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\RegistUserController;
+use App\Http\Requests\RegistUserRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -9,6 +11,7 @@ use Illuminate\Support\Facades\Route;
 // TweetController
 Route::get('tweet/get', [TweetController::class, 'get']);
 Route::post('tweet/add', [TweetController::class, 'add']);
+Route::post('/regist/store', [RegistUserController::class, 'store']);
 
 // AuthController
 Route::post('/auth', [AuthController::class, 'auth']);
